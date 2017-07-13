@@ -7,7 +7,25 @@
 //
 
 #import "ZTOrderServerProvide.h"
+#import <CRProtocolManager.h>
+#import <ZTOrderProtocol.h>
+#import "ZTOrderViewController.h"
+
+@interface ZTOrderServerProvide ()<ZTOrderProtocol>
+
+@end
 
 @implementation ZTOrderServerProvide
+
++ (void)load {
+
+    [CRProtocolManager registServiceProvide:[[self alloc] init] forProtocol:@protocol(ZTOrderProtocol)];
+}
+
+- (id)confirmOrderViewControllerWithGoodsId:(NSString *)goodsId sureComplete:(OrderBlock)sureComplete {
+
+    ZTOrderViewController *ztOrderVC = [[ZTOrderViewController alloc] initWithGoodsID:@"120" block:sureComplete];
+    return ztOrderVC;
+}
 
 @end

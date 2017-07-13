@@ -1,0 +1,15 @@
+PODS:
+  - CRProtocolManager (0.0.2)
+  - ZTOrderProtocol (0.0.5)
+
+DEPENDENCIES:
+  - CRProtocolManager
+  - ZTOrderProtocol
+
+SPEC CHECKSUMS:
+  CRProtocolManager: e9097458cfaf71cbca1f7d15127c6319b14e29fa
+  ZTOrderProtocol: 589b7156ce1b882e49c028934770f8656106176a
+
+PODFILE CHECKSUM: 64bf654b5ecf9718c12b50d33465a72f68679963
+
+COCOAPODS: 1.1.1

@@ -10,28 +10,44 @@
 
 @interface ZTOrderViewController ()
 
+@property(nonatomic,assign) OrderBlock      block;
+
 @end
 
 @implementation ZTOrderViewController
 
+- (UIViewController *)initWithGoodsID:(NSString *)goodID block:(OrderBlock)block {
+
+    if (self = [super init]) {
+        
+        _block = block;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.view setBackgroundColor:[UIColor redColor]];
+    
+    UIButton *sureBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [sureBtn setFrame:CGRectMake(100, 300, 80, 20)];
+    [sureBtn setTitle:@"确认订单" forState:UIControlStateNormal];
+    [sureBtn addTarget:self action:@selector(action_sureBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sureBtn];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)action_sureBtnClickEvent {
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+    _block(@"支付成功");
 }
 
-/*
-#pragma mark - Navigation
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [super touchesBegan:touches withEvent:event];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    _block(@"支付失败");
 }
-*/
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17E1BC4272A20086D8F737EA /* libPods-ZTOrderServerProvide.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D78549AB4669222BE6C50ADD /* libPods-ZTOrderServerProvide.a */; };
 		33AFFE3C1F174E3600F2BDA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AFFE3B1F174E3600F2BDA7 /* main.m */; };
 		33AFFE3F1F174E3600F2BDA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AFFE3E1F174E3600F2BDA7 /* AppDelegate.m */; };
 		33AFFE421F174E3600F2BDA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AFFE411F174E3600F2BDA7 /* ViewController.m */; };
@@ -32,6 +33,9 @@
 		33AFFE531F174E6700F2BDA7 /* ZTOrderServerProvide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTOrderServerProvide.m; sourceTree = "<group>"; };
 		33AFFE551F174E7500F2BDA7 /* ZTOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTOrderViewController.h; sourceTree = "<group>"; };
 		33AFFE561F174E7500F2BDA7 /* ZTOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTOrderViewController.m; sourceTree = "<group>"; };
+		D78549AB4669222BE6C50ADD /* libPods-ZTOrderServerProvide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZTOrderServerProvide.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D969543A3487EAD5FBC0520A /* Pods-ZTOrderServerProvide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTOrderServerProvide.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZTOrderServerProvide/Pods-ZTOrderServerProvide.release.xcconfig"; sourceTree = "<group>"; };
+		DA0F40E0994B9A02953831C0 /* Pods-ZTOrderServerProvide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTOrderServerProvide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZTOrderServerProvide/Pods-ZTOrderServerProvide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E1BC4272A20086D8F737EA /* libPods-ZTOrderServerProvide.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				33AFFE391F174E3600F2BDA7 /* ZTOrderServerProvide */,
 				33AFFE381F174E3600F2BDA7 /* Products */,
+				B22FD84E96FAEC642FE1681E /* Pods */,
+				38BE323426AAD17BF5A79B1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,23 @@
 			path = ZTOrderServerProvide;
 			sourceTree = "<group>";
 		};
+		38BE323426AAD17BF5A79B1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D78549AB4669222BE6C50ADD /* libPods-ZTOrderServerProvide.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B22FD84E96FAEC642FE1681E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F40E0994B9A02953831C0 /* Pods-ZTOrderServerProvide.debug.xcconfig */,
+				D969543A3487EAD5FBC0520A /* Pods-ZTOrderServerProvide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33AFFE4E1F174E3600F2BDA7 /* Build configuration list for PBXNativeTarget "ZTOrderServerProvide" */;
 			buildPhases = (
+				600C910E638839BE2E787E4B /* [CP] Check Pods Manifest.lock */,
 				33AFFE331F174E3600F2BDA7 /* Sources */,
 				33AFFE341F174E3600F2BDA7 /* Frameworks */,
 				33AFFE351F174E3600F2BDA7 /* Resources */,
+				9B9207EAE1AB6B7B0A6CCBAC /* [CP] Embed Pods Frameworks */,
+				32F9A0A66C8F775B94923B5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +155,7 @@
 				TargetAttributes = {
 					33AFFE361F174E3600F2BDA7 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CDNA9GZK3G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -162,6 +190,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F9A0A66C8F775B94923B5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZTOrderServerProvide/Pods-ZTOrderServerProvide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600C910E638839BE2E787E4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9207EAE1AB6B7B0A6CCBAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZTOrderServerProvide/Pods-ZTOrderServerProvide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33AFFE331F174E3600F2BDA7 /* Sources */ = {
@@ -288,8 +364,10 @@
 		};
 		33AFFE4F1F174E3600F2BDA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0F40E0994B9A02953831C0 /* Pods-ZTOrderServerProvide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CDNA9GZK3G;
 				INFOPLIST_FILE = ZTOrderServerProvide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zt.ZTOrderServerProvide;
@@ -299,8 +377,10 @@
 		};
 		33AFFE501F174E3600F2BDA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D969543A3487EAD5FBC0520A /* Pods-ZTOrderServerProvide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CDNA9GZK3G;
 				INFOPLIST_FILE = ZTOrderServerProvide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zt.ZTOrderServerProvide;
@@ -327,6 +407,7 @@
 				33AFFE501F174E3600F2BDA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
