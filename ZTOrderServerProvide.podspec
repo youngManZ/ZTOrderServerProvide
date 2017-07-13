@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZTOrderServerProvide"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "This is ZTOrderServerProvide."
 
   # This description is used to generate tags and improve search results.
@@ -54,8 +54,8 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "zhoutao" => "784589582@qq.com" }
-  # Or just: s.author    = ""
-  # s.authors            = { "" => "" }
+  # Or just: s.author    = "zhoutao"
+  # s.authors            = { "zhoutao" => "784589582@qq.com" }
   # s.social_media_url   = "http://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

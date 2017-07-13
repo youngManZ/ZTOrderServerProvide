@@ -7,8 +7,8 @@
 //
 
 #import "ZTOrderServerProvide.h"
-#import <CRProtocolManager.h>
-#import <ZTOrderProtocol.h>
+#import <CRProtocolManager/CRProtocolManager.h>
+#import <ZTOrderProtocol/ZTOrderProtocol.h>
 #import "ZTOrderViewController.h"
 
 @interface ZTOrderServerProvide ()<ZTOrderProtocol>
