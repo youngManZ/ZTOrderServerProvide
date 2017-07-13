@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ZTOrderProtocol/ZTOrderProtocol.h> 
+
 
 @interface ZTOrderViewController : UIViewController
 
-- (UIViewController *) initWithGoodsID : (NSString *) goodID block : (OrderBlock) block;
+- (UIViewController *) initWithGoodsID : (NSString *) goodID;
 
 @end
