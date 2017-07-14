@@ -40,14 +40,14 @@
 - (void)action_sureBtnClickEvent {
 
     [self dismissViewControllerAnimated:YES completion:nil];
-    _block();
+    self.block();
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
     [super touchesBegan:touches withEvent:event];
     [self dismissViewControllerAnimated:YES completion:nil];
-    _block();
+    self.block();
 }
 
 @end
