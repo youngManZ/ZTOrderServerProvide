@@ -1,6 +1,6 @@
 PODS:
   - CRProtocolManager (0.0.2)
-  - ZTOrderProtocol (0.0.5)
+  - ZTOrderProtocol (0.0.6)
 
 DEPENDENCIES:
   - CRProtocolManager
@@ -8,7 +8,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   CRProtocolManager: e9097458cfaf71cbca1f7d15127c6319b14e29fa
-  ZTOrderProtocol: 589b7156ce1b882e49c028934770f8656106176a
+  ZTOrderProtocol: 1c87f23017267e323a24e9d8854f857bf6ff2c55
 
 PODFILE CHECKSUM: 64bf654b5ecf9718c12b50d33465a72f68679963
 

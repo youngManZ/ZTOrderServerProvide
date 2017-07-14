@@ -22,7 +22,7 @@
     [CRProtocolManager registServiceProvide:[[self alloc] init] forProtocol:@protocol(ZTOrderProtocol)];
 }
 
-- (id)confirmOrderViewControllerWithGoodsId:(NSString *)goodsId sureComplete:(OrderBlock)sureComplete {
+- (id)confirmOrderViewControllerWithGoodsId:(NSString *)goodsId sureComplete:(dispatch_block_t)sureComplete {
 
     ZTOrderViewController *ztOrderVC = [[ZTOrderViewController alloc] initWithGoodsID:@"120" block:sureComplete];
     return ztOrderVC;

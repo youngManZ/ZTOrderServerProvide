@@ -10,13 +10,13 @@
 
 @interface ZTOrderViewController ()
 
-@property(nonatomic,assign) OrderBlock      block;
+@property(nonatomic,assign) dispatch_block_t      block;
 
 @end
 
 @implementation ZTOrderViewController
 
-- (UIViewController *)initWithGoodsID:(NSString *)goodID block:(OrderBlock)block{
+- (UIViewController *)initWithGoodsID:(NSString *)goodID block:(dispatch_block_t)block{
 
     if (self = [super init]) {
         
@@ -40,14 +40,14 @@
 - (void)action_sureBtnClickEvent {
 
     [self dismissViewControllerAnimated:YES completion:nil];
-    _block(@"支付成功");
+    _block();
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
     [super touchesBegan:touches withEvent:event];
     [self dismissViewControllerAnimated:YES completion:nil];
-    _block(@"支付失败");
+    _block();
 }
 
 @end
